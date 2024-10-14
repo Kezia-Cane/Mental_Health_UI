@@ -6,11 +6,13 @@ class ExcerciseTile extends StatelessWidget {
   final icon;
   final String ExcerciseName;
   final String ExcerciseTime;
+  final color;
 
   const ExcerciseTile(
       {required this.icon,
       required this.ExcerciseName,
       required this.ExcerciseTime,
+      required this.color,
       super.key});
 
   @override
@@ -25,7 +27,7 @@ class ExcerciseTile extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
               child: Container(
                   padding: EdgeInsets.all(10),
-                  color: Color(Colors.orange.value),
+                  color: color,
                   child: Icon(
                     icon,
                     color: Colors.white,
